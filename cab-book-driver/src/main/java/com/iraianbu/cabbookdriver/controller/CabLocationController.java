@@ -17,7 +17,7 @@ public class CabLocationController {
     private CabLocationService cabLocationService;
     @PutMapping
     public ResponseEntity updateLocation() throws  Exception{
-        int range = 100;
+        int range = 10;
         while (range > 0){
            cabLocationService.updateLocation(Math.random() + " , " + Math.random());
            Thread.sleep(1000);

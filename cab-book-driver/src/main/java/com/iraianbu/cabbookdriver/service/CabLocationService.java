@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 public class CabLocationService {
     @Autowired
     private KafkaTemplate<String,Object> kafkaTemplate;
-
     public void updateLocation(String location){
         kafkaTemplate.send("cab-location",location);
     }
