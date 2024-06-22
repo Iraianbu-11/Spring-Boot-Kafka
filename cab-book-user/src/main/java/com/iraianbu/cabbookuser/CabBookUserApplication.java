@@ -9,5 +9,4 @@ public class CabBookUserApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CabBookUserApplication.class, args);
 	}
-
 }
